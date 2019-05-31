@@ -10,19 +10,23 @@ namespace Entities.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-            Database.EnsureCreated();
-            Seed();
+            
         }
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
 
-        public void Seed()
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            var product = new Product() { SerialNumber = Guid.NewGuid() };
+            for(int i = 0; i < 100; i++)
+            {
+                base.OnModelCreating(modelBuilder);
 
-            Products.AddRange(product);
-            SaveChanges();
+                modelBuilder.Entity<Product>().Property(p => p.SerialNumber)
+                    .IsRequired();
+
+                modelBuilder.Entity<Product>().HasData(new { SerialNumber = Guid.NewGuid() });
+            }
         }
     }
 }

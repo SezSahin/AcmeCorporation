@@ -20,7 +20,7 @@ namespace AcmeCorporation.Controllers
         private Uri BaseEndPoint { get; set; }
         public HomeController(DataContext db)
         {
-            BaseEndPoint = new Uri("http://localhost:2263/api/product");
+            BaseEndPoint = new Uri("http://localhost:2263/api/ticket");
             _client = new HttpClient();
             _db = db;
         }
@@ -30,7 +30,19 @@ namespace AcmeCorporation.Controllers
             var response = await _client.GetAsync(BaseEndPoint, HttpCompletionOption.ResponseHeadersRead);
             response.EnsureSuccessStatusCode();
             var data = await response.Content.ReadAsStringAsync();
-            return View(JsonConvert.DeserializeObject<List<Product>>(data));
+            return View(JsonConvert.DeserializeObject<List<Ticket>>(data));
+        }
+
+        public async Task<IActionResult> Create(Ticket ticket)
+        {
+            var response = await _client.PostAsJsonAsync(BaseEndPoint, ticket);
+
+            if (response.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+
+            return View(ticket);
         }
     }
 }

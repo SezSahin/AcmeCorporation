@@ -3,7 +3,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { EnvironmentUrlService } from './environment-url.service';
 import { Product } from '../models/product';
  
-@Injectable() 
+@Injectable({
+    providedIn: 'root',
+  }) 
   
 export class RepositoryService {
  

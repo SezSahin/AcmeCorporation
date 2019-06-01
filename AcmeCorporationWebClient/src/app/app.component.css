@@ -1,0 +1,22 @@
+
+#footer {
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height:5.5rem;   /* Height of the footer */
+  text-align: center;
+  background-color: rgba(50, 156, 86, 0.6);
+}
+#footer p {
+    color: white;
+    padding-top: 5px;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 5.5rem;    /* Footer height */
+}

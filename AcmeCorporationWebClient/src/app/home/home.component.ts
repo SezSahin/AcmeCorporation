@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { RepositoryService } from '../services/repository.service';
-import swal from 'sweetalert';
 
 @Component({
   selector: 'app-home',
@@ -29,7 +28,7 @@ export class HomeComponent implements OnInit {
       this.repository.create('api/ticket', this.drawForm.value)
         .subscribe(
         data => {
-          swal({text:'You have entered the draw! We will contact you later today!', icon: 'success'});
+          alert('You have entered the draw! We will contact you later today!');
           this.drawForm.reset();
         }
       )

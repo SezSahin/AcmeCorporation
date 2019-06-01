@@ -25,11 +25,27 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="ClientApp\angular.json" />
-    <Content Include="ClientApp\e2e\tsconfig.e2e.json" />
-    <Content Include="ClientApp\package.json" />
-    <Content Include="ClientApp\tsconfig.json" />
-    <Content Include="ClientApp\tslint.json" />
+    <Content Include="ClientApp\angular.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClientApp\e2e\tsconfig.e2e.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClientApp\package.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClientApp\tsconfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClientApp\tslint.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ClientApp\package-lock.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcmeCorporationAPI", "AcmeCorporationAPI\AcmeCorporationAPI.csproj", "{DB8872FE-23E0-47B9-AEDC-7A6DF29E8D91}"
-	ProjectSection(ProjectDependencies) = postProject
-		{216DF231-1C6D-409B-919D-5742FCE9B92C} = {216DF231-1C6D-409B-919D-5742FCE9B92C}
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{350E3566-DDF3-41D8-A3DD-4970F9597B67}"
 EndProject

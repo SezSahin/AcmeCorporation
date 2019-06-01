@@ -1,0 +1,23 @@
+
+#footer {
+  bottom:0;
+  width:100%;
+  height:5.5rem;   /* Height of the footer */
+  max-height: 10px;
+  text-align: center;
+}
+#footer p {
+    color: white;
+    padding-top: 5px;
+}
+
+#page-container {
+  position: relative;
+  min-height: 83vh;
+  max-width: 95%;
+}
+
+#content-wrap {
+  padding-bottom: 5.5rem;    /* Footer height */
+}
+

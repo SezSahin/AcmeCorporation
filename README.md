@@ -10,10 +10,16 @@ The company name in the Road Runner cartoons is ironic, since the word acme is d
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### 1. Updating The Database
 
+#### Code First
 Your first step after downloading, unzipping and loading the solution, should be to make sure that you have a local database and that the connection string is correct. You can find the connection string in the AcmeCorporationAPI project, in appsetting.json is the appsettings.Development.json file.
 <br> After ensuring that you have a local database up and running, open up the `Package Manager Console` in Visual Studio and make sure that `AcmeCorporationAPI` is selected as the 'Default project', if not, you should select it.
 <br>When you have made sure that the right project is chosen, you should write in *"Update-Database"* and let the seed create the products.
 <br>**You should now be able to run the API.**
+
+#### Database First
+I have provided some script files to create the tables required to run the application.
+<br>If you wish to use Database First, you shoul create these tables and add the connection string in appsettings.json as mentioned in the **Code First** example.
+<br>After doing this, **you should be able to run the API** and continue with the next step.
 
 ### 2. Installing package.json
 

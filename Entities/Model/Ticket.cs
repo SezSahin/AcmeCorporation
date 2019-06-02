@@ -8,6 +8,7 @@ namespace Entities.Model
     public class Ticket
     {
         public Guid Id { get; set; }
+        [StringLength(50)]
         public string FirstName { get; set; }
         [StringLength(50)]
         public string LastName { get; set; }

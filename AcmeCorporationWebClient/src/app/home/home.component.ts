@@ -34,7 +34,6 @@ export class HomeComponent implements OnInit {
         }
       )
     }
-    Swal.fire({text:'You already used this serial number twice!', type: 'error'});
-    this.drawForm.reset();
+    Swal.fire({text:'You either already used this serial number twice or the field is empty!', type: 'error'});
   }
 }

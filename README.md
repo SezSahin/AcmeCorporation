@@ -70,6 +70,7 @@ There's obvious room for improvement here. Such things as:
 - **Copy To Clipboard** - A method to copy the serial number on click, so it's faster to complete the manual test
 - **User Login** - An actual user login with Authentication
 - **Home Page Products** - 5 to 10 products on the Home page, so you don't have to go to the Products page
+- **Actual Testing** - Due to lack of experience and knowledge, I did not write any actual tests for this project
 
 ## Built With
 - ASP.NET Core - The Back-End Framework

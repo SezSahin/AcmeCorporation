@@ -13,8 +13,8 @@ export class HomeComponent implements OnInit {
   drawForm = new FormGroup({
     firstname: new FormControl(''),
     lastname: new FormControl(''),
-    email: new FormControl('',[Validators.required]),
-    phoneNumber: new FormControl(''),
+    email: new FormControl('', [Validators.required]),
+    phoneNumber: new FormControl('', [Validators.required]),
     dateOfBirth: new FormControl(''),
     serialNumber: new FormControl('')
   });

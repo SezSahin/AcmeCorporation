@@ -12,16 +12,21 @@ using Xunit;
 
 namespace AcmeCorporation.Tests
 {
-    public class TicketControllerTests
+    public class TestClientProvider : IDisposable
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly HttpClient _client;
-        public TicketControllerTests(IUnitOfWork unitOfWork)
+        public TestServer server;
+        public HttpClient _client { get; private set; }
+        public TestClientProvider()
         {
-            var server = new TestServer(new WebHostBuilder().UseStartup<Startup>());
-            _client = server.CreateClient();
+            server = new TestServer(new WebHostBuilder().UseStartup<Startup>());
 
-            _unitOfWork = unitOfWork;
+            _client = server.CreateClient();
+        }
+
+        public void Dispose()
+        {
+            server?.Dispose();
+            _client?.Dispose();
         }
 
         //[Fact]

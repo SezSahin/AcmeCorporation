@@ -17,7 +17,7 @@ Your first step after downloading, unzipping and loading the solution, should be
 
 ### 2. Installing package.json
 
-Your second step is to open a command prompt and path your way into the AcmeCorporationWebClient foolder. After finding your way to the folder, you must install the dependencies lying within the package.json file by using the command:
+Your second step is to open a command prompt and path your way into the AcmeCorporationWebClient folder. After finding your way to the folder, you must install the dependencies lying within the package.json file by using the command:
 ```
 npm install
 ```

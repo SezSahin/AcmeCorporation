@@ -1,7 +1,6 @@
 import { Component, OnInit, OnChanges } from '@angular/core';
 import { Product } from '../models/product';
 import { RepositoryService } from '../services/repository.service';
-import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-product',

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../models/product';
 import { RepositoryService } from '../services/repository.service';
 import { Ticket } from '../models/ticket';
-import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-ticket',

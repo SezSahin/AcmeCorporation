@@ -15,7 +15,6 @@ import { Route } from '@angular/compiler/src/core';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductComponent } from './product/product.component';
-import { DropdownDirective } from './shared/dropdown.directive';
 
 const appRoutes: Routes = [
   
@@ -29,8 +28,7 @@ const appRoutes: Routes = [
     HomeComponent,
     TicketComponent,
     FooterComponent,
-    ProductComponent,
-    DropdownDirective,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

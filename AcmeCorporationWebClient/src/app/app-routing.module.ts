@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { TicketComponent } from './ticket/ticket.component';
-import { AuthGuard } from './auth.guard';
 import { ProductComponent } from './product/product.component';
 
 const appRoutes: Routes = [

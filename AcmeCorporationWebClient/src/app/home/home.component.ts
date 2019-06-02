@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { RepositoryService } from '../services/repository.service';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-home',
@@ -28,10 +29,12 @@ export class HomeComponent implements OnInit {
       this.repository.create('api/ticket', this.drawForm.value)
         .subscribe(
         data => {
-          alert('You have entered the draw! We will contact you later today!');
+          Swal.fire({text:'You have entered the draw! We will contact you later today!', type: "success"});
           this.drawForm.reset();
         }
       )
     }
+    Swal.fire({text:'You already used this serial number twice!', type: 'error'});
+    this.drawForm.reset();
   }
 }

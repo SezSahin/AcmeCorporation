@@ -1,6 +1,11 @@
 # AcmeCorporation
 Umbraco Assignment
 
+## What is Acme Corporation?
+The Acme Corporation is a fictional corporation that features prominently in the Road Runner/Wile E. Coyote animated shorts as a running gag featuring outlandish products that fail or backfire catastrophically at the worst possible times. The name is also used as a generic title in many cartoons, especially those made by Warner Bros., and films, TV series, commercials and comic strips.
+
+The company name in the Road Runner cartoons is ironic, since the word acme is derived from Greek (ακμή; English transliteration: akmē) meaning the peak, zenith or prime,[1] yet products from the fictional Acme Corporation are often generic, failure-prone, and/or explosive.
+
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### 1. Updating The Database

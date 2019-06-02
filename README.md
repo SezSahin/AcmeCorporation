@@ -25,7 +25,7 @@ This command installs a package, and any packages that it depends on.
 
 ### 3. Running the Angular app
 
-If you wish to view the code, you can alway use you preferred IDE/Editor. Path your way to the `AcmeCorporationAPI` folder and open it up.
+If you wish to view the code, you can alway use your preferred IDE/Editor. Path your way to the `AcmeCorporationAPI` folder and open it up.
 <br>If your IDE/Editor has a terminal of som sort, you can compile and run the app with the following command:
 ```
 npm start

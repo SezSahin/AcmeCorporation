@@ -54,3 +54,12 @@ There's obvious room for improvement here. Such things as:
 - **Copy To Clipboard** - A method to copy the serial number on click, so it's faster to complete the manual test
 - **User Login** - An actual user login with Authentication
 - **Home Page Products** - 5 to 10 products on the Home page, so you don't have to go to the Products page
+
+## Built With
+- ASP.NET Core - The Back-End Framework
+- EntityFramework - The Object-Relational Mapping Framework
+- Angular 7 - Front-End Framework
+- Visual Studio 17 - IDE/Editor used for the Back-End
+- Visual Studio Code - IDE/Editor used for the Front-End
+
+#### Thank you for reading!

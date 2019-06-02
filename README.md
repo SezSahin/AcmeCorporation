@@ -19,7 +19,7 @@ Your first step after downloading, unzipping and loading the solution, should be
 #### Database First
 I have provided some script files to create the tables required to run the application.
 <br>If you wish to use Database First, you shoul create these tables and add the connection string in appsettings.json as mentioned in the **Code First** example.
-<br> after doing this, you should be able to run the API and continue with the next step.
+<br>After doing this, **you should be able to run the API** and continue with the next step.
 
 ### 2. Installing package.json
 

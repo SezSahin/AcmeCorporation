@@ -40,6 +40,7 @@ Here I will guide you through the process of manual testing what to look out for
 ### Things to Test / Look out for
 - **Front-End Validation** - E-mail and Product Serial Number should be required
 - **Serial Number Limit** - There should be a limit of 2 submissions per serial number
+- **10 Draws Per Page** - There shouldn't be more than 10 draws per page
 - **Anoumt of Serial Numbers** - I was to generate 100 serial numbers. I achieved this in the 'DataContext' under 'Entities'
 
 First you will need to get a `Product Serial Number` from the `Products` list.
@@ -47,4 +48,9 @@ First you will need to get a `Product Serial Number` from the `Products` list.
 
 When you have done this once, you should recieve a confirmation message and can visit the `Draw` page to check if you have indeed entered the draw.
 
-
+## Future Plans / Possibilities
+There's obvious room for improvement here. Such things as:
+- **Generation Method** - A method that generates at least 10 draws, as you currently have to do it manually to test the 10 draws per page
+- **Copy To Clipboard** - A method to copy the serial number on click, so it's faster to complete the manual test
+- **User Login** - An actual user login with Authentication
+- **Home Page Products** - 5 to 10 products on the Home page, so you don't have to go to the Products page

@@ -19,11 +19,5 @@ namespace Repositories
         {
             return _db.Set<Ticket>().Any();
         }
-
-        public void Edit(Ticket dbReceipt, Ticket receipt)
-        {
-            //dbProduct.Map(product);
-            //Edit(dbProduct);
-        }
     }
 }

@@ -14,17 +14,17 @@ export class TicketComponent implements OnInit {
   constructor(private repository: RepositoryService) { }
 
   ngOnInit() {
-    this.getReceipts();
+    this.getTickets();
 
     window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("scrollButton").style.display = "block";
-    } else {
-      document.getElementById("scrollButton").style.display = "none";
+        document.getElementById("scrollButton").style.display = "block";
+      } else {
+        document.getElementById("scrollButton").style.display = "none";
+      }
     }
-  }
   }
 
   // When the user clicks on the button, scroll to the top of the document
@@ -33,7 +33,7 @@ export class TicketComponent implements OnInit {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 
-  getReceipts(){
+  getTickets(){
     let apiAddress: string = 'api/ticket';
 
     this.repository.getData(apiAddress)

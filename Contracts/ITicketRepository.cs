@@ -8,7 +8,5 @@ namespace Contracts
     public interface ITicketRepository : IRepository<Ticket>
     {
         bool Any();
-
-        void Edit(Ticket dbReceipt, Ticket receipt);
     }
 }

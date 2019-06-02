@@ -41,8 +41,6 @@ namespace AcmeCorporationAPI
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
             services.AddSwaggerGen(options => 
             {
                 options.SwaggerDoc("v1", new Info { Title = "AcmeCorporationAPI", Version = "v1" });

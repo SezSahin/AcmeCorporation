@@ -20,11 +20,11 @@ export class ProductComponent implements OnInit {
 
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("scrollButton").style.display = "block";
-    } else {
-      document.getElementById("scrollButton").style.display = "none";
+        document.getElementById("scrollButton").style.display = "block";
+      } else {
+        document.getElementById("scrollButton").style.display = "none";
+      }
     }
-  }
   }
 
   // When the user clicks on the button, scroll to the top of the document

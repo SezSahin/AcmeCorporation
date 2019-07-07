@@ -14,9 +14,9 @@ export class HomeComponent implements OnInit {
     firstname: new FormControl(''),
     lastname: new FormControl(''),
     email: new FormControl('', [Validators.required]),
-    phoneNumber: new FormControl('', [Validators.required]),
+    phoneNumber: new FormControl(''),
     dateOfBirth: new FormControl(''),
-    serialNumber: new FormControl('')
+    serialNumber: new FormControl('', [Validators.required])
   });
 
   constructor(private repository: RepositoryService, private route: ActivatedRoute, private router: Router) { }
@@ -31,9 +31,11 @@ export class HomeComponent implements OnInit {
         data => {
           Swal.fire({text:'You have entered the draw! We will contact you later today!', type: "success"});
           this.drawForm.reset();
+        },
+        error => {
+          Swal.fire({text:'You either already used this serial number twice or the field is empty!', type: 'error'});
         }
       )
     }
-    Swal.fire({text:'You either already used this serial number twice or the field is empty!', type: 'error'});
   }
 }

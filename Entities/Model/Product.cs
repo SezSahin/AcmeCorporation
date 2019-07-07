@@ -9,5 +9,6 @@ namespace Entities.Model
     {
         [Key]
         public Guid SerialNumber { get; set; }
+        public long Id { get; set; }
     }
 }

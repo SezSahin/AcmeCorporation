@@ -24,8 +24,7 @@ namespace Entities.Data
 
                 modelBuilder.Entity<Product>().Property(p => p.SerialNumber)
                     .IsRequired();
-
-                modelBuilder.Entity<Product>().HasData(new { SerialNumber = Guid.NewGuid() });
+                modelBuilder.Entity<Product>().HasData(new Product { SerialNumber = Guid.NewGuid(), Id = i });
             }
         }
     }

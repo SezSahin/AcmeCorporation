@@ -33,6 +33,7 @@ namespace AcmeCorporationAPI
             services.AddCors(c =>
             {
                 c.AddPolicy("AllowOrigin", options => options.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin());
+                c.AddPolicy("AllowOrigin", options => options.WithOrigins("http://10.0.2.2:50846").AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin());
             });
 
             services.AddMvc().AddXmlDataContractSerializerFormatters();

@@ -11,14 +11,18 @@ These instructions will get you a copy of the project up and running on your loc
 ### 1. Updating The Database
 
 #### Code First
-Your first step after downloading, unzipping and loading the solution, should be to make sure that you have a local database and that the connection string is correct. You can find the connection string in the AcmeCorporationAPI project, in appsetting.json is the appsettings.Development.json file.
+Your first step after downloading, unzipping and loading the solution, should be to make sure that you have a local database and create one if not. After that you have to make sure that the connection string is correct. You can find the connection string in the AcmeCorporationAPI project, in appsettings.json is the appsettings.Development.json file.
 <br> After ensuring that you have a local database up and running, open up the `Package Manager Console` in Visual Studio and make sure that `AcmeCorporationAPI` is selected as the 'Default project', if not, you should select it.
 <br>When you have made sure that the right project is chosen, you should write in *"Update-Database"* and let the seed create the products.
 <br>**You should now be able to run the API.**
 
 #### Database First
-I have provided some script files to create the tables required to run the application.
-<br>If you wish to use Database First, you shoul create these tables and add the connection string in appsettings.json as mentioned in the **Code First** example.
+I have provided some script files to create the tables required to run the application:
+- **dbo.Products.sql**
+- **dbo.Tickets.sql**
+- **dbo.Products-SerialNumbers.sql**
+
+<br>If you wish to use Database First, you shoul create these tables and check the connection string in appsettings.json as mentioned in the **Code First** example.
 <br>After doing this, **you should be able to run the API** and continue with the next step.
 
 ### 2. Installing package.json
@@ -66,6 +70,7 @@ There's obvious room for improvement here. Such things as:
 - **Copy To Clipboard** - A method to copy the serial number on click, so it's faster to complete the manual test
 - **User Login** - An actual user login with Authentication
 - **Home Page Products** - 5 to 10 products on the Home page, so you don't have to go to the Products page
+- **Actual Testing** - Due to lack of experience and knowledge, I did not write any actual tests for this project
 
 ## Built With
 - ASP.NET Core - The Back-End Framework

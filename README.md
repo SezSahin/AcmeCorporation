@@ -71,6 +71,7 @@ There's obvious room for improvement here. Such things as:
 - **User Login** - An actual user login with Authentication
 - **Home Page Products** - 5 to 10 products on the Home page, so you don't have to go to the Products page
 - **Actual Testing** - Due to lack of experience and knowledge, I did not write any actual tests for this project
+- **Building An App** - There is currently an app built, but it runs into an instant-kill situation.
 
 ## Built With
 - ASP.NET Core - The Back-End Framework
